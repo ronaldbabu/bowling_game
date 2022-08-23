@@ -1,0 +1,67 @@
+canvas {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 10;
+  margin-bottom: 40px;
+}
+
+#background {
+  width: 640px;
+  height: 620px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.gameButton {
+  width: 200px;
+  cursor: pointer;
+  background-color: #16bf54;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 18px;
+  border: none;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sideButton{
+  width: 200px;
+  cursor: pointer;
+  background-color: #4f95fc;
+  color: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 18px;
+  border: none;
+  box-shadow: rgb(0 0 0 / 24%) 0px 3px 8px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buttonDiv {
+  margin-top: 30%;
+}
+
+.scoreBoardHeader{
+  text-decoration: underline;
+}
+
+.scoreBoardWon{
+  margin-top: 20%;
+  color: #ff8c0b;
+}
+
+.scoreBoardLost{
+  margin-top: 20%;
+  color: #f63730;
+}
+
+
+.strikeBoard{
+  margin-top: 20%;
+  color: #ff8c0b;
+}

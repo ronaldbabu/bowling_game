@@ -1,0 +1,37 @@
+<div class="row">
+  <div class="col-md-6">
+    <canvas id="myCanvas" width="650" height="600"></canvas>
+    <img id="background" src="../../assets/images/lane.png" />
+  </div>
+  <div class="col-md-6">
+    <div class="row text-center">
+      <h2 class="scoreBoardHeader">Scoreboard</h2>
+      <div>
+        Overall Score : <b>{{ overallScore }}</b>
+      </div>
+      <h1 class="strikeBoard" *ngIf="isSpare && showStrikeOrSpare" >Yay!! Its a spare</h1>
+      <h1 class="strikeBoard" *ngIf="isStrike && showStrikeOrSpare">Yay!! Its a strike</h1>
+    </div>
+
+    <div class="row buttonDiv">
+      <div class="col-md-4">
+        <button class="sideButton" *ngIf="!ballThrown">
+          <div (click)="moveBallLeft()">Move left</div>
+        </button>
+      </div>
+      <div class="col-md-4">
+        <button class="gameButton">
+          <div *ngIf="!gameStarted" (click)="loadBall()">Load ball</div>
+          <div *ngIf="!ballThrown" (click)="startBowling()">Throw</div>
+          <div *ngIf="!ballReloaded" (click)="reloadBall()">Reload</div>
+          <div *ngIf="gameFinished" (click)="resetGame()">Restart</div>
+        </button>
+      </div>
+      <div class="col-md-4">
+        <button class="sideButton" *ngIf="!ballThrown">
+          <div (click)="moveBallRight()">Move right</div>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
